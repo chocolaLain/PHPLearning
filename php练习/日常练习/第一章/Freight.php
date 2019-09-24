@@ -26,13 +26,19 @@
         ?> -->
 
         <!-- 利用for循环来生成表单 -->
-        <?php
+        <!-- <?php
             for ($distance=50; $distance <= 250; $distance+=50) { 
                 echo    "<tr>
                             <td align=\"right\">".$distance."</td>
                             <td align=\"right\">".($distance/10)."</td>
                         </tr>\n";
             }
+        ?> -->
+        <?php
+            $num = 100;
+            do {
+                echo $num.'<br/>';
+            } while ($num<1);
         ?>
     </table>
 </body>
