@@ -7,7 +7,7 @@ $len = count($arr);
 for ($i=0; $i < $len-1; $i++) { 
     // 设置当前最小数
     $mindata = $arr[$i];
-    $j_2 = 0;
+    global $j_2;
     // 设置指针j,j总是从当前最小数i后一位开始,到[$len-1]位置结束.
     for ($j=$i+1; $j < $len; $j++) { 
         // 将arr[j]与当前最小数对比,如果mindata>j,则j数保存在mindata中,j继续运行
